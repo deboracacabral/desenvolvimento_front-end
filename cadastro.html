@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()"></button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projeto.html">O Nosso Projeto</a></li>
+                <li><a href="cadastro.html">Faça o seu cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero hero-cadastro">
+        <div class="hero-content">
+        <h1>Cadastro Voluntário</h1>
+        <p>Junte-se a nós!</p>
+        </div>
+    <section>
+        </main>
+            <section class="signup-section">
+                <h2>Informações Necessárias</h2>
+                <div class="sucess-message" id="sucessMessage">
+                    Cadastro realizado com sucesso. Agora você é um de nós!
+                </div>
+                <form id="volunteerForm" onsubmit="handleSubmit(event)">
+                    <fieldset>
+                        <legend>Seus Dados</legend>
+                        <div class="form-group">
+                        <label for="nome"> Nome Completo*:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone*:</label>
+                            <input type="number" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="email">Email*:</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF*:</label>
+                            <input type="number" id="cpf" name="cpf" placeholder="999.999.999-99" required>
+                        </div>
+                        </fieldset>
+                        <fieldset>
+                             <legend>Endereço Completo</legend>
+                        <div class="form-group">
+                            <label for="cep">CEP:</label>
+                            <input type="number" id="cEP" name="cep" placeholder="99999-99">
+                        </div>
+                        <div class="form-group">
+                            <label for="endereço">Endereço:</label>
+                            <input type="text" id="endereço" name="endereço">
+                        </div>
+                         <div class="form-group">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade">
+                        </div>
+                        <div class="form-group">
+                            <label for="estadi">Estado:</label>
+                            <input type="text" id="estado" name="estado">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                     <legend>Disponibilidade</legend>
+                     <div class="form-group">
+                        <label for="disponibilidade">Qual a sua disponibilidade?</label>
+                        <select name="disponibilidade" id="disponibilidade" required>
+                            <option value="">Selecione</option>
+                            <option value="fins-de-semana">Finais de Semana</option>
+                            <option value="dias-uteis">Dias Úteis</option>
+                            <option value="flexivel">Flexível</option>
+                        </select>
+                     </div>   
+                    </fieldset>
+
+                </form>
+
+        </section>
+    </main>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>
