@@ -9,27 +9,25 @@
 <body>
     <header>
         <nav>
-            <button class="menu-toggle" onclick="toggleMenu()"></button>
             <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projeto.html">O Nosso Projeto</a></li>
-                <li><a href="cadastro.html">Faça o seu cadastro</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero hero-cadastro">
         <div class="hero-content">
-        <h1>Cadastro Voluntário</h1>
+        <h1>Cadastro de Voluntário - Salva Vida Animais</h1>
         <p>Junte-se a nós!</p>
         </div>
-    <section>
-        </main>
+    </section>
             <section class="signup-section">
                 <h2>Informações Necessárias</h2>
                 <div class="sucess-message" id="sucessMessage">
                     Cadastro realizado com sucesso. Agora você é um de nós!
                 </div>
+            </section>
                 <form id="volunteerForm" onsubmit="handleSubmit(event)">
                     <fieldset>
                         <legend>Seus Dados</legend>
@@ -54,21 +52,21 @@
                              <legend>Endereço Completo</legend>
                         <div class="form-group">
                             <label for="cep">CEP:</label>
-                            <input type="number" id="cEP" name="cep" placeholder="99999-99">
+                            <input type="number" id="cep" name="cep" placeholder="99999-99">
                         </div>
                         <div class="form-group">
-                            <label for="endereço">Endereço:</label>
-                            <input type="text" id="endereço" name="endereço">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" id="endereco" name="endereco">
                         </div>
                          <div class="form-group">
                             <label for="cidade">Cidade:</label>
                             <input type="text" id="cidade" name="cidade">
                         </div>
                         <div class="form-group">
-                            <label for="estadi">Estado:</label>
+                            <label for="estado">Estado:</label>
                             <input type="text" id="estado" name="estado">
                         </div>
-                    </fieldset>
+                    </fieldset> 
                     <fieldset>
                      <legend>Disponibilidade</legend>
                      <div class="form-group">
@@ -83,9 +81,6 @@
                     </fieldset>
 
                 </form>
-
-        </section>
-    </main>
 
     <script src="script.js"> </script>
 

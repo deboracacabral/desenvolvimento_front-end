@@ -9,5 +9,61 @@ body{
     color: rgb(105, 80, 168);
 }
 header{
-    background: linear-gradient(135deg, #667eea 0%);
+    background: linear-gradient(135deg, #b0c1e7 0%, #467ce0 100%);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    color: white;
+    text-decoration: nome;
+    transition: opacity 0.3s;
+    font-weight: 500;
+    opacity: 0.8s;
+}
+nav a:hover,
+nav a.active{
+    opacity: 1;
+    font-weight: bold;
+}
+.hero{
+    background: linear-gradient(), url();
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+.hero-content, signuo-section{
+    width: 800px;
+    margin: auto;
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+.cta-buttons{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
