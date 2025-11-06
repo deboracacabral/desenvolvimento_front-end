@@ -1,33 +1,34 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0.5;
+    padding: 0.5;
     box-sizing: border-box;
+
 }
 body{
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: rgb(105, 80, 168);
+    line-height: 0.9;
+    color: rgb(164, 136, 234);
 }
 header{
-    background: linear-gradient(135deg, #b0c1e7 0%, #467ce0 100%);
-    color: white;
-    padding: 1rem 0;
+    background: linear-gradient(135deg, #b0c1e7 0%, #9e72ea 100%);
+    color: rgb(134, 90, 220);
+    padding: 0.5;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 2px;
     z-index: 1000;
 }
 nav{
-max-width: 1200px;
-margin: 0 auto;
+max-width: 10000px;
+margin: 0.1 ;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 2rem;
+padding: 0 1rem;
 }
 nav ul{
-    display: flex;
-    gap: 2rem;
+    display: inline-flex;
+    gap: 1.5rem;
 }
 nav a{
     color: white;
@@ -45,25 +46,59 @@ nav a.active{
     background: linear-gradient(), url();
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(172, 110, 217);
     margin-top: 70px;
 }
 .hero-content, signuo-section{
-    width: 800px;
+    width: 1000px;
     margin: auto;
     padding: 2rem;
     animation: fadeInUp 1s ease-out;
 }
 .cta-buttons{
     display: flex;
-    gap: 1.5rem;
+    flex-direction: row; 
+    gap: 1.5rem; 
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2rem;
+}
+form fieldset{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+form legend{
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.btn-primary, .btn-secondary{
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.btn-primary{
+    background: #9ab9f3;
+    color: white;
+}
+.btn-secondary{
+    background: #9ab9f3;
+    color: white;
 }

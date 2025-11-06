@@ -15,7 +15,6 @@
             </ul>
         </nav>
     </header>
-
     <section class="hero hero-cadastro">
         <div class="hero-content">
         <h1>Cadastro de Voluntário - Salva Vida Animais</h1>
@@ -24,9 +23,6 @@
     </section>
             <section class="signup-section">
                 <h2>Informações Necessárias</h2>
-                <div class="sucess-message" id="sucessMessage">
-                    Cadastro realizado com sucesso. Agora você é um de nós!
-                </div>
             </section>
                 <form id="volunteerForm" onsubmit="handleSubmit(event)">
                     <fieldset>
@@ -79,8 +75,19 @@
                         </select>
                      </div>   
                     </fieldset>
+                    <button type="submit" class="btn-primary">Enviar Cadastro</button>
+            </form>
 
-                </form>
+            <section class="voluntarios-lista">
+                 <h2>Voluntários Cadastrados</h2>
+                 <div id="tabelaVoluntarios">
+                 </div>
+                 <button onclick="limparTabela()" class="btn-secondary">Limpar Tabela</button>
+            </section>
+
+    <footer>
+        <p>&copy; 2025 ONG Salve Vidas Animais </p>
+    </footer>
 
     <script src="script.js"> </script>
 
